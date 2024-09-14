@@ -19,6 +19,11 @@ body {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--stone-100);
 }
 
 h1,
@@ -51,11 +56,22 @@ span {
     font-weight: bold;
 }
 
+.container-recipe {
+    width: 100%;
+    max-width: 740px;
+    border-radius: 20px;
+
+    background-color: var(--white);
+}
+
 .recipe__image {
     width: 100%;
-    height: 168px;
+    max-width: 650px;
+    min-height: 168px;
+    height: 20.9vw;
     background-image: url("../assets/images/image-omelette.jpeg");
     background-size: cover;
+    border-radius: 15px;
 }
 
 .recipe__title {
@@ -162,4 +178,16 @@ tr td:first-child {
 tr td:last-child {
     color: var(--brown-800);
     font-weight: bold;
+}
+
+@media screen and (min-width: 375px) {
+    .container-recipe {
+        margin-top: calc(8.3vw - 31px);
+        margin-bottom: calc(8.3vw - 31px);
+    }
+
+    .recipe__image {
+        margin: calc(3.5vw - 10px);
+        margin-bottom: 0;
+    }
 }
