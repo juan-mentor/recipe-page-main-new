@@ -25,28 +25,37 @@ h1,
 h2,
 h3 {
     font-family: "Young Serif", serif;
-    
-    /* font-optical-sizing: auto; */
     font-weight: 700;
     font-style: normal;
 }
 
+ol {
+    margin: 0;
+}
+    
 li {
     list-style-type: none;
 }
-
+    
 section {
     margin-bottom: 2rem;
 }
-    
-/* .container-recipe {
-} */
+ 
+hr {
+    color: var(--stone-100);
+    opacity: 0.3;
+}
+
+span {
+    color: var(--stone-900);
+    font-weight: bold;
+}
 
 .recipe__image {
     width: 100%;
     height: 168px;
-   background-image: url("../assets/images/image-omelette.jpeg");
-   background-size: cover;
+    background-image: url("../assets/images/image-omelette.jpeg");
+    background-size: cover;
 }
 
 .recipe__title {
@@ -58,12 +67,11 @@ section {
 }
 
 .recipe__paragraph {
-    
     line-height: 1.5;
     padding: 0 2.7rem;
     color: var(--stone-600);
 }
-
+    
 .main {
     padding: 2rem;
 }
@@ -89,12 +97,9 @@ section {
 }
 
 .time__item--color {
-    columns: var(--stone-600);
-}
-    
-.time__item span {
     color: var(--stone-600);
 }
+
 
 .time__item::before {
     content: "";
@@ -103,7 +108,7 @@ section {
     height: 5px;
     border-radius: 50%;
     background-color: var(--brown-800);
-    left: -20px;
+    left: -30px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -113,8 +118,48 @@ section {
     color: var(--brown-800);
 }
 
- 
+.instructions {
+    margin-bottom: 0;
+}
 
+.instruction__items {
+    padding: 20px;
+}
+    
+.instruction__item {
+   list-style-type: decimal;
+   color: var(--stone-600);
+   margin-bottom: 0.6rem;
+   line-height: 1.5;
+   padding-left: 20px;
+}
+   
+::marker {
+   color: var(--brown-800);
+   font-weight: bold;
+}
 
+.nutrition__paragraph {
+    line-height: 1.5;
+    color: var(--stone-600);
+}
 
+.table {
+    color: var(--stone-600);
+    width: 100%;
+}
 
+td {
+    border-bottom: 1px solid hsla(30, 18%, 87%, 1);
+    border-collapse: collapse;
+    padding: 10px 30px;
+}
+
+tr td:first-child {
+    width: 42%;
+}
+
+tr td:last-child {
+    color: var(--brown-800);
+    font-weight: bold;
+}
