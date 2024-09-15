@@ -60,7 +60,6 @@ span {
     width: 100%;
     max-width: 740px;
     border-radius: 20px;
-
     background-color: var(--white);
 }
 
@@ -71,7 +70,6 @@ span {
     height: 20.9vw;
     background-image: url("../assets/images/image-omelette.jpeg");
     background-size: cover;
-    
     overflow: hidden;
 }
 
@@ -92,7 +90,7 @@ span {
 .main {
     padding: 2rem;
 }
-
+    
 .time {
     background-color: var(--rose-50);
     padding: 20px 20px 5px;
